@@ -12,6 +12,7 @@
 	
 	<script src="http://www.truemd.in/api/medicine_suggestions?id=h&key=b5061c13048ee1043cfbc9142375ba&limit=200&callback=MyFunction" ></script>
 	<body ng-app="myApp">
+	<p> this is minimalistic representation just to send a request, request is sent on each keystroke press and the response is shown as &lt li &gt below the autocomplete box </p>
 		<div ng-controller="mainController">
 			<input type="text" name="inp" ng-model="inp" ng-keyup="afterSelected(inp)" placeholder="enter some text"></input>
 			<div ng-show="inp">
